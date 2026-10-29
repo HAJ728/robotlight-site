@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — RobotLight</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: #1c1c1e; background: #fff;
+  }
+  a { color: #6b2fc4; }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+  .tag, .date { color: #6b6b70; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  kbd { font: 600 .85em ui-monospace, SFMono-Regular, Menlo, monospace; padding: .05rem .35rem; border: 1px solid #c7c7cc; border-radius: 4px; }
+  .q { font-weight: 600; margin-bottom: .2rem; margin-top: 1.4rem; color: #000; }
+  .q + p { margin-top: 0; }
+  .back { margin-top: 3rem; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ed; background: #16161a; }
+    a { color: #c7a4ff; }
+    kbd { border-color: #48484a; }
+    .q { color: #fff; }
+  }
+</style>
+</head>
+<body>
+<h1>Support</h1>
+<p class="tag">RobotLight</p>
+
+<h2>Getting help</h2>
+<p>Questions, bug reports and ideas are welcome by email:<br>
+<a href="mailto:henke.jsson@proton.me">henke.jsson@proton.me</a></p>
+<p>They can also go to the issue tracker:<br>
+<a href="https://github.com/HAJ728/robotlight-site/issues">github.com/HAJ728/robotlight-site/issues</a></p>
+<p>When reporting a problem, it helps to include the app version, shown under RobotLight → About RobotLight, and your Mac model and macOS version.</p>
+
+<h2>Requirements</h2>
+<p>A Mac with Apple silicon and macOS 14.2 or later.</p>
+
+<h2>Common questions</h2>
+
+<p class="q">The robot doesn't react to the music. What's wrong?</p>
+<p>Most often RobotLight isn't allowed to hear system audio. If audio is playing but RobotLight hears only silence, the toolbar shows <em>Can't Hear Audio…</em> — click it to open the right place in System Settings, turn RobotLight on under Privacy &amp; Security → Screen &amp; System Audio Recording, then come back to the app. Also check that the source in the toolbar is <em>Entire System</em> or the app that is actually playing, and that listening is started (the button says Stop).</p>
+
+<p class="q">Which apps does it work with?</p>
+<p>Any app that plays sound on your Mac: Music, Spotify, a web browser, a video player. Choose <em>Entire System</em> to follow everything, or pick a single app in the toolbar to follow only that one. If the app you picked isn't running, RobotLight waits for it and starts listening when it opens.</p>
+
+<p class="q">Does it record my music?</p>
+<p>No. The sound is analysed as it plays and thrown away. Nothing is saved, and the app cannot go online. See the <a href="privacy.html">privacy policy</a>.</p>
+
+<p class="q">The music is playing but nothing happens on stage.</p>
+<p>RobotLight follows the sound the app actually sends out. If the app is paused or muted inside itself, RobotLight hears silence too, and the stage rests until the music comes back.</p>
+
+<p class="q">Can I change the scene?</p>
+<p>Under <em>Scene</em> in the toolbar or the menu bar: synth or electric guitar, a dock or a floating stage, colours, how bright the spotlights are, night, evening, day or the real time of day, mist, and the city whose sky you see. <kbd>+</kbd> and <kbd>−</kbd> walk closer to the stage or back. Save a look you like as a preset.</p>
+
+<p class="q">Keyboard shortcuts</p>
+<ul>
+  <li><kbd>Return</kbd> start or stop listening</li>
+  <li><kbd>+</kbd> / <kbd>−</kbd> walk closer or back</li>
+  <li><kbd>G</kbd> / <kbd>S</kbd> guitar or synth</li>
+  <li><kbd>P</kbd> next colours</li>
+  <li><kbd>F</kbd> full screen</li>
+  <li><kbd>H</kbd> pin or hide the toolbar</li>
+  <li><kbd>Esc</kbd> show the toolbar</li>
+</ul>
+
+<p class="q">Does it use a lot of energy?</p>
+<p>It draws a full 3D scene, so it uses the graphics chip like a game would. <em>Scene → Save Energy (30 fps)</em> halves the frame rate and cuts the app's energy use by about a third. RobotLight also drops to 30 frames per second in Low Power Mode and when the Mac runs hot, and pauses completely when its window is hidden or covered.</p>
+
+<h2>Credits</h2>
+<p>City data from <a href="https://www.geonames.org">GeoNames</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The app uses no third-party code.</p>
+
+<p class="back"><a href="./">← RobotLight</a></p>
+</body>
+</html>
